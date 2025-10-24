@@ -1,0 +1,127 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HELIUS</title>
+  <link rel="icon" type="image/x-icon" href="logo.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+
+    <span class="brand">HELIUS</span>
+     
+  </header>
+
+  <main>
+    <!-- User can scroll; JS runs smooth auto-scroll; edges are faded -->
+    <div class="carousel" aria-label="Vertical cards carousel" tabindex="0">
+      <div class="track">
+       <!-- 1. Mutable Truths -->
+       <article class="card">
+         <span class="token">ID: TRU-001</span>
+         <h2 class="title">Mutable Truths</h2>
+         <p class="info">Truth evolves with interaction. We log each update.</p>
+         <div class="details" hidden>
+           <p><strong>Thesis:</strong> truth is the rate of model updates, not a fixed endpoint.</p>
+           <p><strong>Arguments:</strong></p>
+           <ul><li>Bayesian updating</li><li>Versioned claims</li><li>User feedback shifts weights</li></ul>
+           <p><strong>Counterarguments:</strong> realism, essentialism.</p>
+           <p><strong>Impact:</strong> better decisions under uncertainty.</p>
+         </div>
+       </article>
+     
+       <!-- 2. Time as Density -->
+       <article class="card">
+         <span class="token">ID: TIM-112</span>
+         <h2 class="title">Time as Density</h2>
+         <p class="info">Time feels thicker when experience compresses.</p>
+         <div class="details" hidden>
+           <p><strong>Thesis:</strong> time perception tracks information density.</p>
+           <ul><li>Memory clustering</li><li>Flow states</li><li>Novelty vs routine</li></ul>
+           <p><strong>Counterarguments:</strong> clock-time primacy.</p>
+           <p><strong>Applications:</strong> design rituals to stretch days.</p>
+         </div>
+       </article>
+     
+       <!-- 3. Power as Agreement -->
+       <article class="card">
+         <span class="token">ID: PWR-204</span>
+         <h2 class="title">Power as Agreement</h2>
+         <p class="info">Institutions run on coordinated belief, not force alone.</p>
+         <div class="details" hidden>
+           <p><strong>Thesis:</strong> authority persists while consent persists.</p>
+           <ul><li>Tax compliance norms</li><li>Open-source governance</li><li>Religious mandates</li></ul>
+           <p><strong>Counterarguments:</strong> coercion models.</p>
+           <p><strong>Signals:</strong> trust, legitimacy, exit costs.</p>
+         </div>
+       </article>
+     
+       <!-- 4. Myth as Program -->
+       <article class="card">
+         <span class="token">ID: MYT-317</span>
+         <h2 class="title">Myth as Program</h2>
+         <p class="info">Myths are executable narratives shaping action.</p>
+         <div class="details" hidden>
+           <p><strong>Thesis:</strong> story patterns compile into policies and habits.</p>
+           <ul><li>Founding myths</li><li>Startup lore</li><li>Nation branding</li></ul>
+           <p><strong>Anti-case:</strong> myth without institutions decays.</p>
+           <p><strong>Tool:</strong> rewrite the script → test behavior change.</p>
+         </div>
+       </article>
+     
+       <!-- 5. Identity = Negotiation -->
+       <article class="card">
+         <span class="token">ID: IDN-421</span>
+         <h2 class="title">Identity = Negotiation</h2>
+         <p class="info">Self is a story confirmed by others over time.</p>
+         <div class="details" hidden>
+           <p><strong>Thesis:</strong> identity stability comes from repeated endorsements.</p>
+           <ul><li>Roles and contexts</li><li>Credential loops</li><li>Reputation graphs</li></ul>
+           <p><strong>Risk:</strong> brittle identities under platform shifts.</p>
+         </div>
+       </article>
+     
+       <!-- 6. Ethics of Prediction -->
+       <article class="card">
+         <span class="token">ID: ETP-536</span>
+         <h2 class="title">Ethics of Prediction</h2>
+         <p class="info">Predictions change the future they describe.</p>
+         <div class="details" hidden>
+           <p><strong>Thesis:</strong> forecasts are interventions.</p>
+           <ul><li>Reflexivity in markets</li><li>Selection bias</li><li>Policy feedback</li></ul>
+           <p><strong>Guardrails:</strong> disclosure, audit trails, harm tests.</p>
+         </div>
+       </article>
+     
+       <!-- 7. Counterfactual Lab -->
+       <article class="card">
+         <span class="token">ID: CFL-609</span>
+         <h2 class="title">Counterfactual Lab</h2>
+         <p class="info">Press “What if…?” to spawn rival explanations.</p>
+         <div class="details" hidden>
+           <p><strong>Thesis:</strong> deliberate counterfactuals widen option sets.</p>
+           <ul><li>Branching narratives</li><li>Scenario weights</li><li>Retrodictions</li></ul>
+           <p><strong>Output:</strong> side-by-side versions with confidence scores.</p>
+         </div>
+       </article>
+      
+      </div>
+    </div>
+  </main>
+
+  <!-- One modal reused by all cards -->
+  <div class="modal" data-modal hidden>
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" data-close aria-label="Close">×</button>
+      <h3 id="modalTitle" class="modal__title"></h3>
+      <div class="modal__content" tabindex="0"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
